@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 6.5rem;
+    background-color: #0f1111;
+    color: white;
+    display: flex;  /**to make everything appear in a line(flexbox)**/
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*box-1*/
+
+.nav-logo{
+    height: 5.2rem;
+    width: 11rem;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 5rem;
+    width: 100%;
+}
+.border{
+    border: 1.5px solid transparent;  /*just to make the border transparent and no visible changes*/
+}
+.border:hover{
+    border: 1.75px solid white;    /*just to make the border appear when hovered
+    */
+}
+
+/*box-2*/
+
+.nav-address{
+    height: 5rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.add-first{
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.add-sec{
+    font-size: 1.3rem;
+    margin-left: 4px;
+}
+
+.add-icon{
+    margin-left: 0.5;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+/* third box*/
+
+.nav-search{
+    display: flex;
+    background-color: pink;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    height: 3.5rem;
+    width: 80rem;
+    border-radius: 10px;
+}
+
+.nav-search:hover{
+    border: 2px solid orange
+}
+
+.search-select{
+    background-color: #cfcccc;
+    width: 5.5rem;
+    font-size: 1.1rem;
+    /* height: 4rem; */
+    text-align: center;
+    border-top-left-radius: 10px; /*only the particular corner to be rounded*/
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    /* height: 4rem; */
+    font-size: 1.6rem;
+    border: none;
+}
+
+.search-icon{
+    width: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color: #febd68;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*box-4*/
+
+.nav-signin{
+    height: 5rem;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.nav-return{
+    height: 5rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+
+span{
+    font-size: 1rem;
+}
+
+.nav-second{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/*Box-6*/
+
+.nav-cart i{
+    font-size: 3rem;
+}
+
+.nav-cart{
+    height: 5rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+
+
+
+/**start of second bar(panel)**/
+
+
+.panel{
+    height: 4rem;
+    color: white;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.panel-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.panel-all i{
+    margin-right: 0.5rem;
+}
+
+.panel-ops{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1.5rem;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.ops{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/**HERO SECTION**/
+
+
+
+.hero-section{
+    background-image: url("hero_image.jpg");
+    height: 35rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg{
+    /* align-self: last baseline; */
+    background-color: white;
+    color: black;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    font-size: 1.4rem;
+    margin-bottom: 6rem;
+
+    /* bottom: 25px;     but not work since it is static so make it relative or make it all flex from hero section */
+}
+
+.hero-msg a{
+    color: #007185;
+}
+
+
+/*Shop section */
+
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #afb3b2;
+}
+
+.box{
+    /* border: 2px solid black; */
+    background-color: white;
+    height: 29rem;
+    width: 23%;
+    padding: 1rem 0rem 1.5rem ;
+    margin-top: 3rem;
+}
+
+
+.box-img{
+    height: 23rem;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+
+.box-content p{
+    color: #007185;
+    /* font-size: 1rem; */
+    margin-top: 2rem;
+}
+
+.box-content h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* margin-bottom: 2rem; */
+}
+
+
+
+
+
+
+
+/**footer panel**/
+
+
+
+
+footer{
+    margin-top: 2rem;
+}
+
+.foot-pan1{
+    background-color: #37475a;
+    color: white;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+
+
+
+.foot-pan2{
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    height: 29rem;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.foot-pan2 ul{
+    margin-top: 2rem;
+    list-style-type: none;
+}
+
+ul p{
+    font-size: 1.4rem;
+}
+
+ul li{
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    color: #dddddd;
+}
+
+
+
+.foot-pan3{
+    background-color: #222f3d;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top: 0.5px solid white;
+}
+
+.foot-pan3 .logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 5rem;
+    width: 8rem;
+}
+
+
+
+.foot-pan4{
+    height: 6rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #0f1111;
+    color: white;
+}
+
+.foot-pan4 .pages{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.foot-pan4 .copyright{
+    padding-top: 0.6rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.foot-pan4 .copyright a:any-link{
+    padding-right: 2rem;
+}
